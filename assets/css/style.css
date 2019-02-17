@@ -209,6 +209,10 @@ a:visited:hover {
           font-size: 0.9 em;
      }
 
+     h1 {
+          font-size: 1.2em;
+     }
+
      #content-wrapper {
           width: 90%;
           margin: auto;
@@ -225,10 +229,6 @@ a:visited:hover {
 
      body {
           font-size: 0.7em;
-     }
-
-     h1 {
-          font-size: 1.2em;
      }
 
      ul {
