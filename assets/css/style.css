@@ -1,0 +1,180 @@
+/* Elements */
+html,
+body {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     overflow: auto;
+     /* this prevents the layout from shifting to accomodate for the scrollbar */
+}
+
+body {
+     display: flex;
+     flex-direction: column;
+     margin: 0;
+     font-family: 'Arial',
+          'Helvetica Neue',
+          Helvetica,
+          sans-serif;
+     color: #777;
+}
+
+button {
+
+     padding: 5px 10px;
+     border: 3px outset #ccc;
+}
+
+footer {
+     margin-bottom: 0;
+     width: 100%;
+     height: 35px;
+     flex-shrink: 0;
+     font-size: small;
+     text-align: center;
+     color: white;
+     background-color: #666;
+     border-top: 5px solid #4aaaa5;
+}
+
+hr {
+     color: #ccc;
+     border-bottom: 2px solid #ccc;
+}
+
+input:focus {
+     background-color: yellow;
+}
+
+li {
+     display: inline;
+}
+
+li:not(:last-child) {
+     border-right: solid 1px #ccc;
+     padding-left: 5px;
+     padding-right: 5px;
+}
+
+nav {
+     width: 100%;
+     margin-top: 0px;
+     margin-left: auto;
+     margin-right: auto;
+     font-weight: bold;
+     border-bottom: 2px solid #ccc;
+}
+
+textarea {
+     height: 100px;
+}
+
+textarea:focus {
+     background: yellow;
+}
+
+/* Pseudo-classes */
+a:link,
+a:visited {
+     text-decoration: none;
+     color: #777;
+}
+
+a:active:hover,
+a:visited:hover {
+     color: #ccc;
+}
+
+/* Classes */
+.color-blank-nav {
+     color: #333;
+}
+
+.color-font {
+     color: #777;
+}
+
+.color-theme {
+     color: #4aaaa5;
+     background-color: white;
+}
+
+.color-theme-inverse {
+     color: white;
+     background-color: #4aaaa5;
+}
+
+.demo-btn {
+     height: 200px;
+     width: auto;
+     margin-top: 25px;
+     margin-left: 0px;
+     margin-right: 50px;
+     border: 3px outset #ccc;
+}
+
+.form-field {
+     width: 100%;
+     line-height: 1.5em;
+     margin-bottom: 10px;
+     padding: 5px;
+     border: 1px solid #777;
+}
+
+.serif {
+     font-family: 'Georgia',
+          Times,
+          'Times New Roman',
+          serif;
+}
+
+/* IDs */
+#brand {
+     position: relative;
+     display: inline-block;
+     margin-top: 0;
+     margin-left: 0;
+     padding-left: 50px;
+     padding-right: 50px;
+}
+
+#content {
+     margin: 20px;
+     text-align: justify;
+}
+
+#content-wrapper {
+     clear: both;
+     float: none;
+     width: 960px;
+     margin: 5% auto;
+     text-align: justify;
+     border: 1px solid #ddd;
+}
+
+#main-wrapper {
+     flex: 1 0 auto;
+     margin: 0;
+     background-image: url("../images/background.jpg");
+}
+
+#nav-wrapper {
+     width: 960px;
+     margin: auto;
+}
+
+#nav-menu {
+     float: right;
+}
+
+#navbar {
+     background-color: white;
+}
+
+#profile-img {
+     float: left;
+     height: 175px;
+     width: 150px;
+     margin-right: 20px;
+     margin-bottom: 20px;
+}
