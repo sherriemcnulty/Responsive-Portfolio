@@ -1,11 +1,11 @@
-/* Elements */
+/* elements */
 html,
 body {
      height: 100%;
      margin: 0;
      padding: 0;
      overflow: auto;
-     /* this prevents the layout from shifting to accomodate for the scrollbar */
+     /* overflow prevents the layout from shifting to accomodate for the scrollbar */
 }
 
 body {
@@ -128,7 +128,7 @@ a:visited:hover {
           serif;
 }
 
-/* IDs */
+/* id's */
 #brand {
      position: relative;
      display: inline-block;
@@ -177,4 +177,80 @@ a:visited:hover {
      width: 150px;
      margin-right: 20px;
      margin-bottom: 20px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 980px) {
+
+     body {
+          font-size: 0.9em;
+     }
+
+     h1 {
+          font-size: 1.4Sem;
+     }
+
+     #content-wrapper {
+          width: 70%;
+          margin-top: 10px;
+          margin-left: 5%;
+     }
+
+     #nav-wrapper {
+          width: 70%;
+          margin-left: 5%;
+     }
+}
+
+@media screen and (max-width: 768px) {
+
+     body {
+          font-size: 0.9 em;
+     }
+
+     #content-wrapper {
+          width: 90%;
+          margin: auto;
+     }
+
+     #nav-wrapper {
+          width: 90%;
+          margin: auto;
+     }
+}
+
+
+@media screen and (max-width: 640px) {
+
+     body {
+          font-size: 0.7em;
+     }
+
+     h1 {
+          font-size: 1.2em;
+     }
+
+     ul {
+          margin-left: 0;
+     }
+
+     #nav-wrapper {
+          clear: both;
+          width: 100%;
+          margin-left: 0;
+     }
+
+     #nav-menu {
+          width: 100%;
+          float: none;
+          text-align: center;
+          padding: 0;
+     }
+
+     #brand {
+          width: 100%;
+          padding: 0;
+          text-align: center;
+     }
 }
